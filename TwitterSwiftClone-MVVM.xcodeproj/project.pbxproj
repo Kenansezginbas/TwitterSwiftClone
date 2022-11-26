@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		79D0C7C02932371100BA4F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7BF2932371100BA4F9C /* AppDelegate.swift */; };
 		79D0C7C22932371100BA4F9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7C12932371100BA4F9C /* SceneDelegate.swift */; };
-		79D0C7C42932371100BA4F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7C32932371100BA4F9C /* ViewController.swift */; };
-		79D0C7C72932371100BA4F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D0C7C52932371100BA4F9C /* Main.storyboard */; };
 		79D0C7C92932371400BA4F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0C7C82932371400BA4F9C /* Assets.xcassets */; };
 		79D0C7CC2932371400BA4F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D0C7CA2932371400BA4F9C /* LaunchScreen.storyboard */; };
+		79D0C7E1293237EC00BA4F9C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7E0293237EC00BA4F9C /* MainTabController.swift */; };
+		79D0C7E3293238E800BA4F9C /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7E2293238E800BA4F9C /* FeedController.swift */; };
+		79D0C7E5293238FD00BA4F9C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7E4293238FD00BA4F9C /* ExploreController.swift */; };
+		79D0C7E72932390F00BA4F9C /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7E62932390F00BA4F9C /* NotificationsController.swift */; };
+		79D0C7E92932392300BA4F9C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7E82932392300BA4F9C /* ConversationsController.swift */; };
+		79D0C7EF293252AB00BA4F9C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0C7EE293252AB00BA4F9C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79D0C7BC2932371100BA4F9C /* TwitterSwiftClone-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TwitterSwiftClone-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0C7BF2932371100BA4F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D0C7C12932371100BA4F9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79D0C7C32932371100BA4F9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79D0C7C62932371100BA4F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79D0C7C82932371400BA4F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79D0C7CB2932371400BA4F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79D0C7CD2932371400BA4F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D0C7E0293237EC00BA4F9C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		79D0C7E2293238E800BA4F9C /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		79D0C7E4293238FD00BA4F9C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		79D0C7E62932390F00BA4F9C /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		79D0C7E82932392300BA4F9C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		79D0C7EE293252AB00BA4F9C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		79D0C7BE2932371100BA4F9C /* TwitterSwiftClone-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				79D0C7DF293237CD00BA4F9C /* Model */,
+				79D0C7DE293237BC00BA4F9C /* View */,
+				79D0C7DD293237AE00BA4F9C /* ViewModel */,
+				79D0C7DC293237A300BA4F9C /* Controller */,
+				79D0C7DB2932379400BA4F9C /* API */,
+				79D0C7DA2932378C00BA4F9C /* Utils */,
 				79D0C7BF2932371100BA4F9C /* AppDelegate.swift */,
 				79D0C7C12932371100BA4F9C /* SceneDelegate.swift */,
-				79D0C7C32932371100BA4F9C /* ViewController.swift */,
-				79D0C7C52932371100BA4F9C /* Main.storyboard */,
 				79D0C7C82932371400BA4F9C /* Assets.xcassets */,
 				79D0C7CA2932371400BA4F9C /* LaunchScreen.storyboard */,
 				79D0C7CD2932371400BA4F9C /* Info.plist */,
 			);
 			path = "TwitterSwiftClone-MVVM";
+			sourceTree = "<group>";
+		};
+		79D0C7DA2932378C00BA4F9C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79D0C7EE293252AB00BA4F9C /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79D0C7DB2932379400BA4F9C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		79D0C7DC293237A300BA4F9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79D0C7E0293237EC00BA4F9C /* MainTabController.swift */,
+				79D0C7E2293238E800BA4F9C /* FeedController.swift */,
+				79D0C7E4293238FD00BA4F9C /* ExploreController.swift */,
+				79D0C7E62932390F00BA4F9C /* NotificationsController.swift */,
+				79D0C7E82932392300BA4F9C /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79D0C7DD293237AE00BA4F9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79D0C7DE293237BC00BA4F9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		79D0C7DF293237CD00BA4F9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				79D0C7CC2932371400BA4F9C /* LaunchScreen.storyboard in Resources */,
 				79D0C7C92932371400BA4F9C /* Assets.xcassets in Resources */,
-				79D0C7C72932371100BA4F9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D0C7C42932371100BA4F9C /* ViewController.swift in Sources */,
+				79D0C7E72932390F00BA4F9C /* NotificationsController.swift in Sources */,
+				79D0C7E92932392300BA4F9C /* ConversationsController.swift in Sources */,
 				79D0C7C02932371100BA4F9C /* AppDelegate.swift in Sources */,
+				79D0C7EF293252AB00BA4F9C /* Extensions.swift in Sources */,
+				79D0C7E5293238FD00BA4F9C /* ExploreController.swift in Sources */,
 				79D0C7C22932371100BA4F9C /* SceneDelegate.swift in Sources */,
+				79D0C7E1293237EC00BA4F9C /* MainTabController.swift in Sources */,
+				79D0C7E3293238E800BA4F9C /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79D0C7C52932371100BA4F9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79D0C7C62932371100BA4F9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79D0C7CA2932371400BA4F9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +348,6 @@
 				INFOPLIST_FILE = "TwitterSwiftClone-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +375,6 @@
 				INFOPLIST_FILE = "TwitterSwiftClone-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
